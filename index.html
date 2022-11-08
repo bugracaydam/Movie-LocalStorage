@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">MOVIE NIGHT</a>
+      <div class="toggle"><img src="images/toggle.png" /></div>
+    </header>
+
+    <div class="banner">
+      <video src="images/annatim.mp4" muted autoplay loop type="mp4"></video>
+      <div class="filmss"></div>
+
+      <div class="ekleme" id="myForm">
+        <div class="form-group">
+          <input
+            type="text"
+            required
+            data-pristine-required-message="Film Adı Boş Bırakılamaz."
+            class="text1"
+            placeholder="Film Adı Giriniz."
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="required"
+            required
+            data-pristine-required-message="Film Adı Boş Bırakılamaz."
+            class="text2"
+            placeholder="Yönetmen Adı Giriniz."
+          />
+        </div>
+        <div class="form-group">
+          <input type="url" class="text3" placeholder="Afiş Linki Giriniz." />
+        </div>
+        <div class="form-group">
+          <input
+            type="maxlenght"
+            data-pristine-maxlength="40"
+            class="text4"
+            placeholder="Kısa Açıklama Giriniz."
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            data-pristine-minlength="20"
+            class="text5"
+            placeholder="Uzun Açıklama Giriniz."
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" value="Submit" class="btnn">EKLE</button>
+        </div>
+      </div>
+
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="images/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/pristine/dist/pristine.js" type="text/javascript"></script>
+  </body>
+</html>
